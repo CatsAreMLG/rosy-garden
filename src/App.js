@@ -2,15 +2,20 @@ import React from 'react'
 
 import flowers from './data/flowers.json'
 
+const images = require.context('./img/cactus', true)
+
 function App() {
   let grid = Object.keys(flowers.tulips.flags).map((flower) => {
     return (
-      <div
-        className="garden_flower"
-        style={{ background: flowers.tulips.flags[flower].color }}>
-        <span className="garden_flower_text">
+      <div className="garden_flower">
+        {/* <span className="garden_flower_text">
           {flowers.tulips.flags[flower].flag}
-        </span>
+        </span> */}
+        <img
+          className="garden_flower_image"
+          src={images('./' + flowers.tulips.flags[flower].color + '.png')}
+          alt="cactus"
+        />
       </div>
     )
   })

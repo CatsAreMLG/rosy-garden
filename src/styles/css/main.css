@@ -45,16 +45,24 @@ code {
   transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
 }
 .garden_flower {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1rem;
-  border-radius: 2rem;
+  margin: 8%;
+  border-radius: 10000px;
   text-align: center;
   filter: brightness(100%) saturate(100%);
+  background: #443635;
   border: 5px solid rgba(0, 0, 0, 0.25);
   cursor: pointer;
   transition: transform 250ms ease-out;
+}
+.garden_flower_image {
+  position: absolute;
+  width: 50%;
+  height: 250%;
+  transform: rotate(45deg) translateY(-50%);
 }
 .garden_flower:hover {
   transform: translate(10%, -10%);

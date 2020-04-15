@@ -28,16 +28,25 @@
 }
 
 .garden_flower {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1rem;
-  border-radius: 2rem;
+  margin: 8%;
+  border-radius: 10000px;
   text-align: center;
   filter: brightness(100%) saturate(100%);
+  background: rgb(68, 54, 53);
   border: 5px solid rgba(0, 0, 0, 0.25);
   cursor: pointer;
   transition: transform 250ms ease-out;
+
+  &_image {
+    position: absolute;
+    width: 50%;
+    height: 250%;
+    transform: rotate(45deg) translateY(-50%);
+  }
 
   &:hover {
     transform: translate(10%, -10%);
