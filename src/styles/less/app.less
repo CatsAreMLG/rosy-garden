@@ -1,0 +1,46 @@
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Varela Round', 'Arial', sans-serif;
+  background: #fffae5;
+  height: 10vh;
+}
+
+.garden {
+  background: rgb(100, 160, 100);
+  display: grid;
+  margin: auto;
+  padding: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  height: 90vh;
+  width: 90vh;
+  min-width: 600px;
+  min-height: 600px;
+}
+
+.garden_flower {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  border-radius: 2rem;
+  text-align: center;
+  filter: brightness(100%) saturate(100%);
+  border: 5px solid rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.garden_flower_text {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 0.25rem 1rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
